@@ -1,0 +1,8 @@
+ body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+background: url(./the\ rocket.jpg)fixed;
+color:red;
+}
+#btn{
+    border-radius: 50px;
+}

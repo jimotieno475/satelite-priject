@@ -6,7 +6,14 @@ text-align: center;
 }
 #btn{
     border-radius: 50px;
+    background-color: bisque;
+    cursor: pointer;
+
 }
+#btn:hover{
+    background-color: blue;
+}
+
 #top-text{
     background-color: brown;
     font-family: 'Times New Roman', Times, serif;

@@ -2,7 +2,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 background: url(./the\ rocket.jpg)fixed;
 color:red;
+text-align: center;
 }
 #btn{
     border-radius: 50px;
+}
+#top-text{
+    background-color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: aquamarine;
 }

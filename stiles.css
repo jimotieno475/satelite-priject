@@ -1,8 +1,8 @@
  body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 background: url(./the\ rocket.jpg)fixed;
-color:red;
-text-align: center;
+color:rgb(51, 255, 0);
+position: relative;
 }
 #btn{
     border-radius: 50px;
@@ -11,13 +11,64 @@ text-align: center;
 
 }
 #btn:hover{
-    background-color: blue;
+    background-color: rgb(255, 238, 0);
 }
 
 #top-text{
-    background-color: brown;
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: 600;
     color: aquamarine;
+    position: fixed;
 }
+#satelite-image{
+    border-radius: 8px;
+    max-width: 35%;
+    height: auto;
+    margin-top: 20px;
+}
+#like{
+    background-color:blue;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#like:hover{
+    background-color: rgb(255, 17, 0);
+
+}
+/* .grid-container{
+   display: grid; 
+   grid-template-columns: auto auto auto auto;
+   gap: 50px 100px;
+} */
+#back{
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:blue;
+}
+#back:hover{
+    background-color: rgb(99, 90, 9);
+
+}
+#front{
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: blue;
+}
+
+#front:hover{
+    background-color: rgb(123, 255, 0);
+
+}
+#ok{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:blue;
+}
+
+#ok:hover{
+    background-color: rgb(255, 0, 242);
+
+}
+

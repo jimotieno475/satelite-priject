@@ -28,12 +28,12 @@ position: relative;
     height: auto;
     margin-top: 20px;
 }
-#like{
+.like{
     background-color:blue;
     cursor: pointer;
     border-radius: 8px;
 }
-#like:hover{
+.like:hover{
     background-color: rgb(255, 17, 0);
 
 }
@@ -42,32 +42,32 @@ position: relative;
    grid-template-columns: auto auto auto auto;
    gap: 50px 100px;
 } */
-#back{
+.back{
     border-radius: 8px;
     cursor: pointer;
     background-color:blue;
 }
-#back:hover{
+.back:hover{
     background-color: rgb(99, 90, 9);
 
 }
-#front{
+.front{
     border-radius: 8px;
     cursor: pointer;
     background-color: blue;
 }
 
-#front:hover{
+.front:hover{
     background-color: rgb(123, 255, 0);
 
 }
-#ok{
+.ok{
     border-radius: 50%;
     cursor: pointer;
     background-color:blue;
 }
 
-#ok:hover{
+.ok:hover{
     background-color: rgb(255, 0, 242);
 
 }

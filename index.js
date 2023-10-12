@@ -7,25 +7,25 @@ function sateliteData() {
   
 }
 sateliteData()
-function functionData(satellites) {
+// function functionData(satellites) {
 
-    let satelliteID = document.getElementById("ID");
-    let satelliteCountry = document.getElementById("country");
-    let satelliteLaunchDate = document.getElementById("launch-date");
-    let satelliteMass = document.getElementById("mass");
-    let satelliteLauncher = document.getElementById("launcher");
-    let sateliteImage=document.getElementById("satelite-image")
-    let searchBtn=document.getElementById("btn")
-    satellites.forEach((satellite) => {
-        sateliteImage.src=satellite.image;
-        satelliteID.innerText = `ID:${satellite.id}`;
-        satelliteCountry.innerText = `Coutry:${satellite.country}`;
-        satelliteLaunchDate.innerText = `Launch Date:${satellite.launch_date}`;
-        satelliteMass.innerText = `Mass:${satellite.mass}`;
-        satelliteLauncher.innerHTML = `Launcher:${satellite.launcher}`;
-    });
+//     let satelliteID = document.getElementById("ID");
+//     let satelliteCountry = document.getElementById("country");
+//     let satelliteLaunchDate = document.getElementById("launch-date");
+//     let satelliteMass = document.getElementById("mass");
+//     let satelliteLauncher = document.getElementById("launcher");
+//     let sateliteImage=document.getElementById("satelite-image")
+//     let searchBtn=document.getElementById("btn")
+//     satellites.forEach((satellite) => {
+//         sateliteImage.src=satellite.image;
+//         satelliteID.innerText = `ID:${satellite.id}`;
+//         satelliteCountry.innerText = `Coutry:${satellite.country}`;
+//         satelliteLaunchDate.innerText = `Launch Date:${satellite.launch_date}`;
+//         satelliteMass.innerText = `Mass:${satellite.mass}`;
+//         satelliteLauncher.innerHTML = `Launcher:${satellite.launcher}`;
+//     });
 
-}
+// }
 function functionData(data) {
     let dilEl=document.getElementById("satellite-list");
     let satellites=""
@@ -51,17 +51,17 @@ function functionData(data) {
     Launcher:${satellite.launcher}
     </div>
     <div id="likes">
-    <button id="like">like</button> 
-    <span>0</span>
+    <button class="like">like</button> 
+    <span class="spans">0</span>
  </div>
- <div id="commentsd">
+ <div>
  <input type="text" placeholder="comments"/> 
- <button id="ok">Ok</button>
+ <button class="ok">Ok</button>
 </div> 
 </div>
 <div>
-<button id="back">Previous</button>
-<button id="front">Next</button>
+<button class="back">Previous</button>
+<button class="front">Next</button>
 </div>
 </div>`}
 dilEl.innerHTML=satellites;
@@ -69,45 +69,75 @@ let likee=0;
 
 let myLikes=document.getElementById("likes") 
 
-let y=document.getElementById("like")
-y.addEventListener("click",likesIcrea)
+let likeees=document.getElementsByClassName("like")
+console.log(likeees)
+for (let i = 0; i < likeees.length; i++) {
+  let likeee = likeees[i];
+  console.log(likeee);
+  likeee.addEventListener("click",likesIcrea)
  function likesIcrea() {
     console.log("Like")
     likee=likee+1;
-    
-    incrimanto() 
- }       
-    
-  function incrimanto() {
-    span=myLikes.getElementsByTagName("span")[0];
-    span.innerText=likee ;
-  } 
-//  s=document.getElementById("subscribe")
-//   s.addEventListener("click",myfunc())
-//     function myfunc() {
-// alert `Thanks for subscribing`
-//     }
-let p =document.getElementById("movements")
-document.getElementById("back").addEventListener("click",backbut)
-document.getElementById("front").addEventListener("click",frontbut)
+    alert `due to technicall issue all satelites will be liked when you like one of them the issue will be fixed soon`
+increamanto()
+  }
+ } 
 
-function backbut() {
-  console.log("previous")
-    alert (`Only one satelite of type found`)
+
+ function increamanto(){
+ let spans=document.getElementsByClassName("spans");
+    console.log(spans) 
+  for (let i = 0; i < spans.length; i++) {
+    const span = spans[i];
+    console.log(span)
+   span.innerText=likee ;
+ }
 }
+      
+document.getElementById("movements")
+let backs=document.getElementsByClassName("back")
+console.log (backs)
+for (let i = 0; i < backs.length; i++) {
+  const back = backs[i];
+  console.log(back)
+  back.addEventListener("click",backbut)
+  function backbut() {
+  console.log("previous")
+    alert (`Only one satellite of type found`)
+}
+
+}
+let fronts=document.getElementsByClassName("front")
+console.log (fronts)
+for (let i = 0; i < fronts.length; i++) {
+  const front = fronts[i];
+  console.log(front)
+  front.addEventListener("click",frontbut)
 function frontbut() {
   console.log("Next")
-    alert (`The next satelite of this type will be launced soon`)
+    alert (`The next satellite of this type will be launced soon`)
 }
-document.getElementById("commentsd")
-let inputdat=document.getElementsByTagName("input")
-document.getElementById("ok").addEventListener("click",okdisplay)
 
-function okdisplay() {
+}
+let inputdat=document.getElementsByTagName("input").innerText=""
+let oks=document.getElementsByClassName("ok")
+console.log(oks)
+for (let i = 0; i < oks.length; i++) {
+  const ok = oks[i];
+    console.log(ok)
+  ok.addEventListener("click",okdisplay)
+  function okdisplay() {
   console.log(inputdat)
+  alert (`thanks for your comment it has been received`)
+}
 }
 
+
+
 }
+
+
+
 sateliteData()
 
         

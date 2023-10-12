@@ -142,6 +142,8 @@ sateliteData()
 
         
     
-  
+  array.forEach(element => {
+    
+  });
 
 

@@ -1,7 +1,8 @@
  body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 background: url(./the\ rocket.jpg)fixed;
-color:rgb(51, 255, 0);
+background-color: #252725;
+color:rgb(18, 18, 24);
 position: relative;
 }
 #btn{
@@ -19,7 +20,7 @@ position: relative;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: 600;
-    color: aquamarine;
+    color: rgb(253, 66, 20);
     position: fixed;
 }
 #satelite-image{
